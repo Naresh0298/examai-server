@@ -73,6 +73,10 @@ UPLOAD_DIRECTORY = "uploads_docs"
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
 
+@app.get('/')
+def read_root():
+    return {'message' : 'Server running'}
+
 
 @app.post("/upload_docs")
 async def upload_doc(files: List[UploadFile]= File(...)):
