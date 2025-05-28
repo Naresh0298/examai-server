@@ -18,3 +18,19 @@ app/gcs/*.json
 
 # Other sensitive files
 config
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Google Cloud credentials
+app/gcs/*.json
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
