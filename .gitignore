@@ -8,6 +8,7 @@ cp app/gcs/examai-gcs-ae25c582f730.json app/gcs/examai-gcs-ae25c582f730.json.bac
 
 # Environment variables
 app/.env
+.env
 .env.local
 .env.production
 
