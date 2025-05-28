@@ -1,0 +1,6 @@
+# Environment variables
+.env
+
+# Google Cloud Service Account Keys
+*.json
+/app/gcs/*.json # Specifically for your GCS key file
