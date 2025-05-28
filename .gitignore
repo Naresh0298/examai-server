@@ -1,6 +1,16 @@
-# Environment variables
+# Environment files
 .env
+*.env
+!.env.example
 
-# Google Cloud Service Account Keys
+# Credentials
 *.json
-/app/gcs/examai-gcs-ae25c582f730.json # Specifically for your GCS key file
+app/gcs/*.json
+**/credentials*
+**/*key*
+
+# Common secret patterns
+*.pem
+*.key
+*.p12
+config/secrets.yml
