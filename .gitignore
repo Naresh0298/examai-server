@@ -3,4 +3,4 @@
 
 # Google Cloud Service Account Keys
 *.json
-/app/gcs/*.json # Specifically for your GCS key file
+/app/gcs/examai-gcs-ae25c582f730.json # Specifically for your GCS key file
