@@ -1,16 +1,11 @@
-# Environment files
+# Environment variables
 .env
-*.env
-!.env.example
+.env.local
+.env.production
 
-# Credentials
+# Google Cloud credentials
 *.json
 app/gcs/*.json
-**/credentials*
-**/*key*
 
-# Common secret patterns
-*.pem
-*.key
-*.p12
-config/secrets.yml
+# Other sensitive files
+config/credentials.yml
