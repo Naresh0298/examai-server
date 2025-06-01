@@ -9,6 +9,8 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+
 class GCSService:
     def __init__(self, bucket_name: str, credentials_path: Optional[str] = None):
         """
@@ -185,3 +187,5 @@ class GCSService:
             return blob.exists()
         except Exception:
             return False
+        
+# gcsservice = GCSService()

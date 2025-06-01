@@ -10,10 +10,13 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Import your GCS service
-from gcs.gcs_service import GCSService
+
+from .gcs_service import GCSService
+
+
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="File Upload API with GCS", version="1.0.0")
+
 
 
 # --- CORS Configuration START ---
